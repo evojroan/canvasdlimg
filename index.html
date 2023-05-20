@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="CSS.css" />
+  </head>
+  <body>
+    <div id="imagesMaterial">
+      <h3>圖片素材</h3>
+      <img
+        src="material/face.png"
+        id="face" />
+      <img
+        src="material/mouth.png"
+        id="mouth" />
+    </div>
+
+    <div id="allCanvas">
+      <div id="canvas1Div">
+        <h3>Canvas1：用 Canvas 繪製</h3>
+        <canvas
+          class="canvas"
+          height="120"
+          width="120"
+          id="canvas1"></canvas
+        ><br />
+        <button
+          id="dl1"
+          onClick="handleClick()">
+          Download_1
+        </button>
+      </div>
+
+      <div id="canvas2Div">
+        <h3>Canvas2：疊加圖片素材</h3>
+        <canvas
+          class="canvas"
+          height="120px"
+          width="120px"
+          id="canvas2"></canvas
+        ><br />
+        <button>
+          <a
+            id="dl2"
+            download="image.png">
+            Download_2
+          </a>
+        </button>
+      </div>
+    </div>
+
+    <script src="javascript.js"></script>
+    <script>
+      drawCanvas1();
+      drawCanvas2();
+    </script>
+  </body>
+</html>
